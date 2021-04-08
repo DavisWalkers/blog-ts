@@ -1,0 +1,1 @@
+export const isFetchingSelector = (state: any) => state.isFetching;

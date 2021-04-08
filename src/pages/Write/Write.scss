@@ -1,0 +1,83 @@
+@import "../../styles/utils/variables";
+
+.write__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 160px;
+}
+
+.write__header {
+  margin: 0;
+  margin-bottom: 60px;
+}
+
+.write__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.write__input {
+  width: 100%;
+  height: auto;
+  padding: 10px 20px;
+  border-radius: 10px;
+
+  font-family: "SF Mono", sans-serif;
+  font-size: 22px;
+  line-height: 2;
+
+  overflow: hidden;
+  outline: none;
+  resize: none;
+}
+
+.write__input:first-of-type {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.write__input:last-of-type {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.write__input::placeholder {
+  font-weight: 400;
+}
+
+.write__button {
+  margin-top: 50px;
+}
+
+.write__error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 99%;
+  height: 40px;
+  border: 1px solid $gray;
+  
+  font-family: "SF Mono", sans-serif;
+  
+  background-color: $white;
+}
+
+.write__error--title {
+  margin-top: -40px;
+  border-bottom: 0;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+
+.write__error--body {
+  margin-bottom: -40px;
+  border-top: 0;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
